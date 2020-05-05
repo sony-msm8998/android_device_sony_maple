@@ -1,0 +1,2 @@
+# ROOTFS_TRIMAREA
+-sbin/tad_static;rootfs
