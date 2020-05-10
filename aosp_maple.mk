@@ -5,6 +5,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit device configuration
 $(call inherit-product, device/sony/maple/device.mk)
 
+# Product API level	
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+
 ### BOOTANIMATION
 # vendor/lineage/config/common_full_phone.mk
 TARGET_SCREEN_HEIGHT := 1920
@@ -24,5 +27,3 @@ PRODUCT_MANUFACTURER := Sony
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=maple
-
-TARGET_GAPPS_ARCH := arm64
