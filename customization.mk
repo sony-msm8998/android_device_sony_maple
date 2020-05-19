@@ -23,13 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-threads=2 \
     dalvik.vm.image-dex2oat-threads=4
 
-# USB debugging at boot
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,adb \
-    ro.adb.secure=0 \
-    ro.secure=0 \
-    ro.debuggable=1
-
 # VoLTE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.is_voip_enabled=1 \
@@ -40,10 +33,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1  \
     persist.dbg.wfc_avail_ovr=1
-
-# Use Vulkan for UI rendering
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiavk
 
 include device/sony/maple/prebuilts/prebuilts.mk
 

@@ -12,3 +12,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Use Vulkan for UI rendering
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.renderer=skiavk
+
+# Assistant
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
+
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.block_allow_data=1
+
+# Apex
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.apex.updatable=true

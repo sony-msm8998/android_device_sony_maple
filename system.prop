@@ -3,6 +3,12 @@
 #GMS
 ro.com.google.clientidbase.ms=android-sonymobile
 
+# Apex
+ro.apex.updatable=true
+
+# Enabling Assistant
+ro.opa.eligible_device=true
+
 ### USB
 ro.vendor.usb.pid_suffix=1F1
 
