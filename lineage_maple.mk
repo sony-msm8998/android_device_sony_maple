@@ -22,16 +22,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
 
-ifeq ($(IS_MAPLE_DSDS),true)
-### It safer to define this prop, as it is read in init_maple.cpp
-### For dual-sim, if it is not defined, init_maple's if statement will consider
-### G8141
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.product.vendor.name=G8142
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.product.vendor.name=G8141
-endif
+include device/sony/maple/ims_prop.mk
 
 PRODUCT_NAME := lineage_maple
 PRODUCT_DEVICE := maple
