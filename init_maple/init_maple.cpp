@@ -71,4 +71,7 @@ void target_load_properties()
             property_override_dual("ro.product.name", "ro.vendor.product.name", "maple");
             property_override_dual("ro.product.device", "ro.vendor.product.device", "maple");
         }
+
+        // Use pixel fp for passing safetynet
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
 }

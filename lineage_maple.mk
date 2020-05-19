@@ -27,9 +27,9 @@ PRODUCT_MANUFACTURER := Sony
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=maple
 
-# Build info
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys"
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coral-user 10 QQ2A.200501.001.B2 6352890 release-keys"
+# Finderpint
+BUILD_FINGERPRINT := google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.vendor.build.fingerprint=google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
