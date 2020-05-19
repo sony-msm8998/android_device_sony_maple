@@ -1,5 +1,8 @@
 # system prop for maple
 
+#GMS
+ro.com.google.clientidbase.ms=android-sonymobile
+
 ### USB
 ro.vendor.usb.pid_suffix=1F1
 
