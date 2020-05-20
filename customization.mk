@@ -27,7 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.is_voip_enabled=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.voice_on_lte=1
+    persist.vendor.radio.voice_on_lte=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
