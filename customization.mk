@@ -27,7 +27,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.is_voip_enabled=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.vendor.radio.voice_on_lte=0
+    persist.vendor.radio.voice_on_lte=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.vendor.ims.dropset_feature=0 \
+	persist.vendor.radio.add_power_save=1 \
+	persist.vendor.radio.force_on_dc=true \
+	persist.radio.custom_ecc=1 \
+	persist.radio.data_con_rprt=1 \
+	persist.radio.data_ltd_sys_ind=1 \
+	persist.radio.ignore_dom_time=10 \
+	persist.radio.rat_on=combine \
+	persist.radio.sib16_support=1 \
+	persist.radio.RATE_ADAPT_ENABLE=1 \
+	persist.radio.ROTATION_ENABLE=1 \
+	persist.radio.VT_ENABLE=1 \
+	persist.radio.VT_HYBRID_ENABLE=1 \
+	persist.radio.is_wps_enabled=true \
+	persist.radio.videopause.mode=1 \
+	persist.radio.sap_silent_pin=1 \
+	persist.radio.always_send_plmn=true \
+	persist.rcs.supported=0 \
+	persist.dbg.ims_volte_enable=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
@@ -41,7 +62,9 @@ PRODUCT_PACKAGES += \
 	ims-ext-common_system \
 	ims-ext-common \
 	qti-telephony-utils \
-	qti_telephony_utils.xml
+	qti_telephony_utils.xml \
+	qtiImsInCallUi \
+	ConfURIDialer
 
 # External exFat tools
 PRODUCT_PACKAGES += \
