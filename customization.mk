@@ -24,6 +24,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.image-dex2oat-threads=4
 
 # VoLTE
+ifeq ($(WITH_VOLTE),true)
+$(warning ************* WITH_VOLTE is Enabled ***************************)
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.is_voip_enabled=1 \
     persist.vendor.radio.rat_on=combine \
@@ -49,11 +51,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.always_send_plmn=true \
 	persist.rcs.supported=0 \
 	persist.dbg.ims_volte_enable=1
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1  \
-    persist.dbg.wfc_avail_ovr=1
+endif
 
 include device/sony/maple/prebuilts/prebuilts.mk
 
