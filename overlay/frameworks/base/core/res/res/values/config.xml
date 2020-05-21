@@ -242,6 +242,9 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
+    <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
+    <integer name="config_shutdownBatteryTemperature">600</integer>
+
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
