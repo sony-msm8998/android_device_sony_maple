@@ -29,6 +29,11 @@ PRODUCT_COPY_FILES += \
 	$(PRE_PATH)/permissions/privapp-permissions-xGoogleHEXAGON.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-xGoogleHEXAGON.xml \
     $(PRE_PATH)/permissions/privapp-permissions-OkGoogleHEXAGON.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-OkGoogleHEXAGON.xml
 
+# Sound Trigger
+PRODUCT_PACKAGES += \
+    libsmwrapper \
+    libmulawdec
+
 # Permissions for Sony
 PRODUCT_COPY_FILES += \
 	$(PRE_PATH)/permissions/com.sonymobile.album.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.album.xml \
