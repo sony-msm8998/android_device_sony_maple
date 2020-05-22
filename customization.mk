@@ -49,10 +49,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.is_voip_enabled=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.voice_on_lte=1 \
+	persist.vendor.radio.calls.on.ims=1 \
     persist.radio.calls.on.ims=1 \
 	persist.dbg.volte_avail_ovr=1 \
 	persist.dbg.vt_avail_ovr=1  \
 	persist.dbg.wfc_avail_ovr=1
+
+TARGET_SYSTEM_PROP += $(CUST_PATH)/volte.prop
 endif
 
 include device/sony/maple/prebuilts/prebuilts.mk
