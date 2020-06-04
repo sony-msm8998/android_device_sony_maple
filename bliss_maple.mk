@@ -42,4 +42,9 @@ export BLISS_BUILDTYPE=OFFICIAL
 # Device Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.bliss.maintainer= Shujath
+	
+# Doze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
 
