@@ -264,9 +264,9 @@
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.sonymobile.com/G8141R4711.xml</string>
      
-     <!-------------------Credits: Shashank Verma <shashank.verma2002@gmail.com>-----------------------
+                       <!--Credits: Shashank Verma <shashank.verma2002@gmail.com>
                                         Signed off - @shank03
-      ----------------------------Enabling Ambient display for XZP ---------------------------------->
+                                  Enabling Ambient display for XZP -->
      
      <!-- If true, the display will be shifted around in ambient mode.-->
     <bool name="config_enableBurnInProtection">true</bool>
