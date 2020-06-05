@@ -58,7 +58,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_SYSTEM_PROP += $(CUST_PATH)/volte.prop
 endif
 
-include device/sony/maple/prebuilts/prebuilts.mk
 
 # IMS
 PRODUCT_PACKAGES += \
