@@ -48,6 +48,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 # Reserve space for data encryption (23753875456-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23753859072
 
+#DT2W
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
 ### LIGHTS
 TARGET_PROVIDES_LIBLIGHT := true
 
