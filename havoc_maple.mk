@@ -33,7 +33,7 @@ PRODUCT_MANUFACTURER := Sony
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=maple
 
-PRODUCT_GMS_CLIENTID_BASE := android-sonymobile
+PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
 
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
 
