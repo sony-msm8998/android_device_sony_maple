@@ -31,7 +31,16 @@ PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
 
 BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
 
+
+### Pixel Stuffs
+IS_PHONE := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+### FaceUnlockService
+TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
+
 
 # Wallpapers
 PRODUCT_PACKAGES += \

@@ -65,3 +65,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
 	qtiImsInCallUi \
 	ConfURIDialer
+
+
+# Use Vulkan for UI rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiavk
