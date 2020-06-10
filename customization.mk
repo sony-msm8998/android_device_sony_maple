@@ -18,10 +18,6 @@ CUST_PATH := device/sony/maple
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
 
-# Limit dex2oat threads to improve thermals
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-threads=2 \
-    dalvik.vm.image-dex2oat-threads=4
 
 # VoLTE
 ifeq ($(WITH_VOLTE),true)
@@ -69,8 +65,3 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
 	qtiImsInCallUi \
 	ConfURIDialer
-
-# External exFat tools
-PRODUCT_PACKAGES += \
-    mkfs.exfat \
-    fsck.exfat
