@@ -20,3 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Apex
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.apex.updatable=true
+
+
+# Netflix
+ro.netflix.bsp_rev=Q845-05000-1
