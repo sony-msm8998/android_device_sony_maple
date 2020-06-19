@@ -9,10 +9,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.secure=0 \
     ro.debuggable=1
 
-# Use Vulkan for UI rendering
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwui.renderer=skiavk
-
 # Assistant
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
@@ -20,7 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Apex
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.apex.updatable=true
-
 
 # Netflix
 ro.netflix.bsp_rev=Q845-05000-1
