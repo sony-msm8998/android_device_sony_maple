@@ -14,11 +14,6 @@
 
 CUST_PATH := device/sony/maple
 
-# AR config for Play Store
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.ar.xml
-
-
 # VoLTE
 ifeq ($(WITH_VOLTE),true)
 $(warning ************* WITH_VOLTE is Enabled ***************************)
@@ -53,16 +48,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 TARGET_SYSTEM_PROP += $(CUST_PATH)/volte.prop
 endif
-
-
-# IMS
-PRODUCT_PACKAGES += \
-	ims-ext-common_system \
-	ims-ext-common \
-	qti-telephony-utils \
-	qti_telephony_utils.xml \
-        qti-telephony-hidl-wrapper \
-        qti_telephony_hidl_wrapper.xml \
-	qtiImsInCallUi \
-	ConfURIDialer
 
