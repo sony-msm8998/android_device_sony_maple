@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
 ifeq ($(WITH_VOLTE),true)
 $(warning ************* WITH_VOLTE is Enabled ***************************)
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.ims.dropset_feature=0 \
+    persist.vendor.ims.dropset_feature=0 \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.force_on_dc=true \
     persist.radio.custom_ecc=1 \
@@ -42,14 +42,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.always_send_plmn=true \
     persist.rcs.supported=0 \
     persist.dbg.ims_volte_enable=1 \
-	persist.vendor.radio.is_voip_enabled=1 \
+    persist.vendor.radio.is_voip_enabled=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.voice_on_lte=1 \
-	persist.vendor.radio.calls.on.ims=1 \
+    persist.vendor.radio.calls.on.ims=1 \
     persist.radio.calls.on.ims=1 \
-	persist.dbg.volte_avail_ovr=1 \
-	persist.dbg.vt_avail_ovr=1  \
-	persist.dbg.wfc_avail_ovr=1
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1  \
+    persist.dbg.wfc_avail_ovr=1
 
 TARGET_SYSTEM_PROP += $(CUST_PATH)/volte.prop
 endif
@@ -61,8 +61,8 @@ PRODUCT_PACKAGES += \
 	ims-ext-common \
 	qti-telephony-utils \
 	qti_telephony_utils.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
+        qti-telephony-hidl-wrapper \
+        qti_telephony_hidl_wrapper.xml \
 	qtiImsInCallUi \
 	ConfURIDialer
 
