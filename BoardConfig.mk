@@ -60,9 +60,6 @@ BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
 ### MODEM
 BOARD_MODEM_CUSTOMIZATIONS := true
 
-### IMS
-BOARD_IMS_CAMERA := true
-
 ### SYSTEM PROPS
 # Add device-specific ones
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
