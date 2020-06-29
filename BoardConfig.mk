@@ -60,9 +60,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 ### Sound Trigger
 BOARD_SUPPORTS_SOUND_TRIGGER_HAL := true
 
-### MODEM
-BOARD_MODEM_CUSTOMIZATIONS := true
-
 ### SYSTEM PROPS
 # Add device-specific ones
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
