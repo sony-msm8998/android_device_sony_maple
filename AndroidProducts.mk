@@ -16,8 +16,10 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_maple.mk \
-    $(LOCAL_DIR)/havoc_maple.mk
+    $(LOCAL_DIR)/havoc_maple.mk \
+    $(LOCAL_DIR)/bliss_maple.mk 
 
 COMMON_LUNCH_CHOICES := \
     aosp_maple-userdebug \
-    havoc_maple-userdebug 
+    havoc_maple-userdebug \
+    bliss_maple-userdebug 
