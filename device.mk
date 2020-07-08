@@ -49,5 +49,9 @@ endif # WITH_TWRP
 # Disable treble
 PRODUCT_FULL_TREBLE_OVERRIDE := false
 
+# Use Vulkan for UI rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.renderer=skiavk
+
 # Customization
 $(call inherit-product, device/sony/maple/customization.mk)
