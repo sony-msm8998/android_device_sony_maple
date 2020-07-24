@@ -1,5 +1,7 @@
 # Device tree for Maple (Xperia XZ Premium)
 
+# This is NOT the MAIN, IN-USE TREE. The MAIN trees used in ROMs are private for now
+
 ## IMPORTANT
 ### If you are building for dual sim then :
 Change this in lineage_maple.mk
