@@ -1,5 +1,0 @@
-## Props override from init_maple.cpp
-
-ro.product.model=G8142
-ro.product.name=maple_dsds
-ro.product.device=maple

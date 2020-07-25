@@ -23,13 +23,9 @@ PRODUCT_PLATFORM := yoshino
 
 
 ### KERNEL & BOOTLOADER
-ifeq ($(IS_MAPLE_DSDS),true)
 TARGET_BOOTLOADER_BOARD_NAME := G8142
 TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_dsds_defconfig
-else
-TARGET_BOOTLOADER_BOARD_NAME := G8141
-TARGET_KERNEL_CONFIG := lineage-msm8998-yoshino-maple_defconfig
-endif
+
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 
