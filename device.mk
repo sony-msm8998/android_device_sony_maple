@@ -15,6 +15,16 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay 
+    
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl \
+    android.hardware.keymaster@3.0-service
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
 
 ifeq ($(WITH_TWRP),true)
 
